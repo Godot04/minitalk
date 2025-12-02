@@ -148,10 +148,10 @@ PID: 12345
 Hello, World!
 
 # Terminal 2: Send another message
-./client 12345 "42 is amazing!"
+./client 12345 "Hey from 42Wolfsburg!"
 
 # Terminal 1 (server output):
-Hello, World!42 is amazing!
+Hello, World!Hey from 42Wolfsburg!
 ```
 
 ### Complex Messages
