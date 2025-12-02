@@ -238,21 +238,8 @@ You can test the program with various inputs:
 - The implementation uses `SA_SIGINFO` for enhanced signal handling
 - Small delays (`usleep(200)`) ensure reliable signal delivery
 - Server can only handle one client at a time to prevent signal mixing
-- The bitwise transmission is MSB (Most Significant Bit) first
 - Null terminator ensures clean message boundaries
-
-## 🔧 Possible Improvements
-
-For bonus features, consider:
-- **Acknowledgment System**: Server confirms receipt of each character
-- **Unicode Support**: Extended character set handling
-- **Multiple Clients**: Queue system for handling concurrent transmissions
-- **Optimization**: Reduce transmission delays while maintaining reliability
 
 ## 👤 Author
 
-**opopov** - 42 School Student
-
-## 📄 License
-
-This project is part of the 42 School curriculum.
+**opopov**
