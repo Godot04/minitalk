@@ -44,7 +44,7 @@ The program uses two UNIX signals for binary communication:
 ```
 Client                              Server
   |                                    |
-  |  1. Get Server PID                |
+  |  1. Get Server PID                 |
   |                                    |
   |  2. Convert char to bits           |
   |     'A' = 01000001                 |
