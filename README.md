@@ -8,7 +8,7 @@
 
 **minitalk** is a project that implements a simple data exchange program using UNIX signals. It consists of a client and a server that communicate through `SIGUSR1` and `SIGUSR2` signals. The server displays its PID and receives strings sent by the client, which are transmitted bit by bit using only these two signals.
 
-Through this project, I gained deep understanding of:
+Through this project, I got knowledge of:
 - UNIX signal handling and inter-process communication (IPC)
 - Bitwise operations and binary data transmission
 - Process IDs and signal-based communication protocols
