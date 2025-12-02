@@ -193,22 +193,6 @@ The server outputs error messages for:
 - **Dependencies**: libft
 - **System Calls**: `signal()`, `sigaction()`, `kill()`, `getpid()`, `pause()`
 
-### Bitwise Operations
-
-The program uses efficient bitwise operations:
-
-```c
-// Checking if bit i is set
-if ((c >> i) & 1)
-    // Bit is 1, send SIGUSR2
-else
-    // Bit is 0, send SIGUSR1
-
-// Building character bit by bit
-ch |= 1;      // Set rightmost bit
-ch <<= 1;     // Shift left for next bit
-```
-
 ## 🎮 Testing
 
 You can test the program with various inputs:
