@@ -160,7 +160,6 @@ The program supports:
 - Special characters: `./client 12345 "Hello! @#$%"`
 - Spaces and punctuation: `./client 12345 "Test 123, works?"`
 - Unicode characters: `./client 12345 "Hello 世界"`
-- Long messages: `./client 12345 "This is a very long message..."`
 
 ### Error Handling
 
