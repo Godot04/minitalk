@@ -176,45 +176,12 @@ The server outputs error messages for:
 
 ## 📊 Implementation Structure
 
-The project is organized with a clean, modular approach:
-
 ### Files
 
 - **server.c** - Server implementation with signal handlers
 - **client.c** - Client implementation with bit transmission
 - **Makefile** - Build configuration for both programs
 - **Libft/** - Custom C library for utility functions
-
-### Server Structure
-
-```c
-void server_action(int signum, siginfo_t *info, void *tmp)
-{
-    // Static variables to maintain state between signal calls
-    static int i = 0;                    // Bit counter (0-7)
-    static __pid_t usr_pid = 0;          // Current client PID
-    static unsigned char ch = 0;         // Character being assembled
-
-    // Signal processing logic:
-    // 1. Verify sender PID
-    // 2. Add bit to character
-    // 3. After 8 bits, display character
-    // 4. Reset for next character
-}
-```
-
-### Client Structure
-
-```c
-static void string_send(int pid, char *str)
-{
-    // For each character:
-    // 1. Extract 8 bits (MSB to LSB)
-    // 2. Send SIGUSR1 for 0, SIGUSR2 for 1
-    // 3. Small delay between signals
-    // 4. Send null terminator
-}
-```
 
 ## ⚙️ Technical Details
 
